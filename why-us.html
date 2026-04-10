@@ -11,22 +11,16 @@
         tailwind.config = {
             theme: {
                 extend: {
-                    colors: {
-                        brand: {
-                            teal: '#10b981',
-                            amber: '#f59e0b',
-                            navy: '#0f172a',
-                            light: '#f8fafc'
-                        }
-                    },
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                        serif: ['Playfair Display', 'serif'],
-                    }
+                    colors: { brand: { teal: '#10b981', amber: '#f59e0b', navy: '#0f172a', light: '#f8fafc' } },
+                    fontFamily: { sans: ['Inter', 'sans-serif'], serif: ['Playfair Display', 'serif'] }
                 }
             }
         }
     </script>
+    <style>
+        .mobile-link { display: block; padding: 1rem 0; border-b border-slate-200; font-size: 1.25rem; font-weight: 500; color: #1e293b; }
+        .mobile-link:hover { color: #10b981; }
+    </style>
 </head>
 <body class="font-sans text-slate-700">
 
@@ -35,96 +29,67 @@
         <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
             <a href="index.html" class="text-brand-teal font-bold text-xl tracking-tight">Freedman Broker Insurance</a>
             <nav class="hidden lg:flex items-center gap-8 text-sm font-medium text-slate-600">
-                <a href="index.html" class="hover:text-brand-teal transition">Home</a>
-                <a href="why-us.html" class="text-brand-teal font-semibold why-us-link">Why Us</a>
-                <a href="contact.html" class="hover:text-brand-teal transition">Contact</a>
+                <a href="index.html#solutions" class="hover:text-brand-teal transition">Solutions</a>
+                <a href="why-us.html" class="hover:text-brand-teal transition">Why Us</a>
+                <a href="index.html#faq" class="hover:text-brand-teal transition">FAQ</a>
+                <a href="contact.html" class="hover:text-brand-teal transition">Contact Us</a>
                 <div class="flex items-center gap-2 text-brand-teal border-l pl-8 ml-2">
                     <i data-lucide="phone" class="w-4 h-4"></i>
                     <span>+1 (800) 123-4567</span>
                 </div>
             </nav>
-            <a href="contact.html" class="bg-brand-teal text-white px-5 py-2.5 rounded-lg text-sm font-semibold hover:bg-emerald-600 transition">Get a Quote</a>
+            <div class="flex items-center gap-2">
+                <button id="mobile-toggle" class="lg:hidden p-2 text-brand-navy">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
         </div>
     </header>
 
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="fixed inset-0 bg-white z-50 hidden flex flex-col">
+        <div class="p-6 flex justify-between items-center border-b">
+            <span class="text-brand-teal font-bold text-xl">Menu</span>
+            <button id="mobile-close" class="p-2 text-brand-navy">
+                <i data-lucide="x" class="w-6 h-6"></i>
+            </button>
+        </div>
+        <nav class="flex-1 p-6 flex flex-col gap-4">
+            <a href="index.html#solutions" class="mobile-link">Solutions</a>
+            <a href="why-us.html" class="mobile-link">Why Us</a>
+            <a href="index.html#faq" class="mobile-link">FAQ</a>
+            <a href="contact.html" class="mobile-link">Contact Us</a>
+            <a href="index.html#quote" class="bg-brand-teal text-white text-center py-4 rounded-xl font-bold mt-4">Get a Quote</a>
+        </nav>
+    </div>
+
     <!-- Hero -->
-    <section class="pt-20 min-h-[40vh] bg-brand-navy flex items-center">
-        <div class="max-w-7xl mx-auto px-6 py-20">
-            <p class="text-brand-teal font-bold tracking-widest text-xs uppercase mb-4">Why Choose Us</p>
-            <h1 class="font-serif text-5xl md:text-6xl text-white">Your Trusted Partner in Bonding Excellence</h1>
+    <section class="pt-32 pb-24 bg-brand-light">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h1 class="font-serif text-5xl text-brand-navy mb-6">Why Choose Us</h1>
+            <p class="text-xl text-slate-600 max-w-2xl mx-auto">We are your trusted partner for performance and surety bonds.</p>
         </div>
     </section>
 
-    <!-- Why Us Content -->
+    <!-- Content -->
     <section class="py-24 bg-white">
         <div class="max-w-7xl mx-auto px-6">
-            <div class="grid lg:grid-cols-2 gap-16 items-center mb-24">
-                <div>
-                    <div class="space-y-8">
-                        <div class="flex gap-4">
-                            <div class="w-14 h-14 bg-brand-teal/10 rounded-xl flex items-center justify-center flex-shrink-0">
-                                <i data-lucide="clock" class="w-7 h-7 text-brand-teal"></i>
-                            </div>
-                            <div>
-                                <h3 class="font-semibold text-brand-navy text-lg mb-2">Fast Turnaround</h3>
-                                <p class="text-slate-500">Get approved within 24 hours. Most bonds issued same-day for qualified applicants. We understand time is money in business.</p>
-                            </div>
-                        </div>
-                        <div class="flex gap-4">
-                            <div class="w-14 h-14 bg-brand-teal/10 rounded-xl flex items-center justify-center flex-shrink-0">
-                                <i data-lucide="users" class="w-7 h-7 text-brand-teal"></i>
-                            </div>
-                            <div>
-                                <h3 class="font-semibold text-brand-navy text-lg mb-2">Expert Team</h3>
-                                <p class="text-slate-500">Decades of combined experience in surety bonds and contract law. Our team has seen every scenario.</p>
-                            </div>
-                        </div>
-                        <div class="flex gap-4">
-                            <div class="w-14 h-14 bg-brand-teal/10 rounded-xl flex items-center justify-center flex-shrink-0">
-                                <i data-lucide="dollar-sign" class="w-7 h-7 text-brand-teal"></i>
-                            </div>
-                            <div>
-                                <h3 class="font-semibold text-brand-navy text-lg mb-2">Competitive Rates</h3>
-                                <p class="text-slate-500">We work with 50+ carriers to get you the best rates in the industry. More options means better pricing for you.</p>
-                            </div>
-                        </div>
-                        <div class="flex gap-4">
-                            <div class="w-14 h-14 bg-brand-teal/10 rounded-xl flex items-center justify-center flex-shrink-0">
-                                <i data-lucide="shield-check" class="w-7 h-7 text-brand-teal"></i>
-                            </div>
-                            <div>
-                                <h3 class="font-semibold text-brand-navy text-lg mb-2">A+ Rated Carriers</h3>
-                                <p class="text-slate-500">All our bond carriers are A-rated or better. Your project is in safe hands.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="relative">
-                    <img src="https://images.unsplash.com/photo-1556761175-4b46a572c786?auto=format&fit=crop&q=80" alt="Team meeting" class="rounded-2xl shadow-2xl">
-                    <div class="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-xl">
-                        <p class="font-serif text-4xl text-brand-teal">50+</p>
-                        <p class="text-slate-500 text-sm">Carrier Partners</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Stats -->
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 py-12 border-t border-slate-200">
-                <div class="text-center">
-                    <p class="font-serif text-4xl text-brand-navy mb-2">15K+</p>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center p-8">
+                    <h3 class="font-serif text-5xl text-brand-teal mb-2">15K+</h3>
                     <p class="text-slate-500">Bonds Issued</p>
                 </div>
-                <div class="text-center">
-                    <p class="font-serif text-4xl text-brand-navy mb-2">$500M+</p>
+                <div class="text-center p-8">
+                    <h3 class="font-serif text-5xl text-brand-teal mb-2">$500M+</h3>
                     <p class="text-slate-500">Bond Capacity</p>
                 </div>
-                <div class="text-center">
-                    <p class="font-serif text-4xl text-brand-navy mb-2">98%</p>
+                <div class="text-center p-8">
+                    <h3 class="font-serif text-5xl text-brand-teal mb-2">98%</h3>
                     <p class="text-slate-500">Approval Rate</p>
                 </div>
-                <div class="text-center">
-                    <p class="font-serif text-4xl text-brand-navy mb-2">10+</p>
-                    <p class="text-slate-500">Years Experience</p>
+                <div class="text-center p-8">
+                    <h3 class="font-serif text-5xl text-brand-teal mb-2">24/7</h3>
+                    <p class="text-slate-500">Support</p>
                 </div>
             </div>
         </div>
@@ -140,14 +105,67 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-brand-navy py-12 border-t border-white/10">
-        <div class="max-w-7xl mx-auto px-6 text-center text-slate-400 text-sm">
-            <p>&copy; 2026 Freedman Broker Insurance Bonds. All rights reserved.</p>
+    <footer class="bg-brand-navy py-16 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-12">
+                <div>
+                    <span class="text-brand-teal font-bold text-xl tracking-tight">Freedman Broker Insurance</span>
+                    <p class="text-slate-400 text-sm mt-4">Providing high-performance bonding and insurance solutions to businesses nationwide since 2005.</p>
+                </div>
+                <div>
+                    <h5 class="font-bold mb-6 text-slate-100">Solutions</h5>
+                    <ul class="space-y-4 text-slate-400 text-sm">
+                        <li><a href="#" class="hover:text-brand-teal transition">Performance Bonds</a></li>
+                        <li><a href="#" class="hover:text-brand-teal transition">Surety Bonds</a></li>
+                        <li><a href="#" class="hover:text-brand-teal transition">Bid Bonds</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="font-bold mb-6 text-slate-100">Company</h5>
+                    <ul class="space-y-4 text-slate-400 text-sm">
+                        <li><a href="#" class="hover:text-brand-teal transition">About Us</a></li>
+                        <li><a href="contact.html" class="hover:text-brand-teal transition">Contact Us</a></li>
+                        <li><a href="#" class="hover:text-brand-teal transition">Careers</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="font-bold mb-6 text-slate-100">Legal</h5>
+                    <ul class="space-y-4 text-slate-400 text-sm">
+                        <li><a href="#" class="hover:text-brand-teal transition">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-brand-teal transition">Terms of Use</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pt-8 border-t border-slate-800 text-center text-slate-500 text-xs">
+                <p>&copy; 2024 Freedman Broker Insurance. All rights reserved.</p>
+            </div>
         </div>
     </footer>
 
     <script>
         lucide.createIcons();
+        
+        // Mobile Menu Toggle
+        const mobileToggle = document.getElementById('mobile-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileClose = document.getElementById('mobile-close');
+
+        if (mobileToggle && mobileMenu) {
+            mobileToggle.addEventListener('click', () => {
+                mobileMenu.classList.remove('hidden');
+                mobileMenu.classList.add('flex');
+            });
+            mobileClose.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                mobileMenu.classList.remove('flex');
+            });
+            document.querySelectorAll('.mobile-link').forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                    mobileMenu.classList.remove('flex');
+                });
+            });
+        }
     </script>
 </body>
 </html>
