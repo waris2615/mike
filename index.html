@@ -31,6 +31,7 @@
         .faq-content { max-height: 0; overflow: hidden; transition: max-height 0.3s ease-out; }
         .faq-item.active .faq-content { max-height: 200px; }
         .faq-item.active .chevron { transform: rotate(180deg); }
+        .mobile-link { padding: 0.75rem 0; border-b border-slate-100; display: block; }
     </style>
 </head>
 <body class="font-sans text-slate-700">
@@ -49,8 +50,29 @@
                 </div>
             </nav>
             <a href="#quote" class="bg-brand-teal text-white px-5 py-2.5 rounded-lg text-sm font-semibold hover:bg-emerald-600 transition shadow-lg shadow-emerald-100">Get a Quote</a>
+            <button id="mobile-menu-btn" class="lg:hidden p-2 text-slate-600">
+                <i data-lucide="menu" class="w-6 h-6"></i>
+            </button>
         </div>
     </header>
+
+    <div id="mobile-menu" class="fixed inset-0 bg-white z-50 hidden">
+        <div class="p-6">
+            <div class="flex justify-between items-center mb-8">
+                <span class="text-brand-teal font-bold text-xl">Freedman Broker Insurance</span>
+                <button id="mobile-menu-close" class="p-2">
+                    <i data-lucide="x" class="w-6 h-6"></i>
+                </button>
+            </div>
+            <nav class="flex flex-col space-y-4 text-lg font-medium">
+                <a href="#solutions" class="mobile-link">Solutions</a>
+                <a href="#why-us" class="mobile-link">Why Us</a>
+                <a href="#faq" class="mobile-link">FAQ</a>
+                <a href="#quote" class="mobile-link">Contact Us</a>
+                <a href="#quote" class="bg-brand-teal text-white px-6 py-3 rounded-lg text-center mt-4">Get a Quote</a>
+            </nav>
+        </div>
+    </div>
 
     <section class="relative pt-20 min-h-[750px] flex items-center">
         <div class="absolute inset-0 z-0">
@@ -293,6 +315,19 @@
                 btn.parentElement.classList.toggle('active');
             });
         });
+        
+        // Mobile menu
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileMenuClose = document.getElementById('mobile-menu-close');
+        
+        if(mobileMenuBtn && mobileMenu) {
+            mobileMenuBtn.addEventListener('click', () => mobileMenu.classList.remove('hidden'));
+            mobileMenuClose.addEventListener('click', () => mobileMenu.classList.add('hidden'));
+            document.querySelectorAll('.mobile-link').forEach(link => {
+                link.addEventListener('click', () => mobileMenu.classList.add('hidden'));
+            });
+        }
     </script>
 </body>
 </html>
