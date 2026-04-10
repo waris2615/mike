@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Performance & Surety Bonds | Scale Your Business</title>
-    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-    <!-- Scripts -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
     <script>
@@ -30,31 +28,21 @@
         }
     </script>
     <style>
-        .faq-content {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.3s ease-out;
-        }
-        .faq-item.active .faq-content {
-            max-height: 200px;
-        }
-        .faq-item.active .chevron {
-            transform: rotate(180deg);
-        }
+        .faq-content { max-height: 0; overflow: hidden; transition: max-height 0.3s ease-out; }
+        .faq-item.active .faq-content { max-height: 200px; }
+        .faq-item.active .chevron { transform: rotate(180deg); }
     </style>
 </head>
 <body class="font-sans text-slate-700">
 
-    <!-- Header -->
     <header class="fixed w-full z-50 bg-white/95 backdrop-blur-sm border-b border-slate-100">
         <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-            <div class="flex items-center gap-2">
-                <span class="text-brand-teal font-bold text-xl tracking-tight">Freedman Broker Insurance</span>
-            </div>
+            <a href="index.html" class="text-brand-teal font-bold text-xl tracking-tight">Freedman Broker Insurance</a>
             <nav class="hidden lg:flex items-center gap-8 text-sm font-medium text-slate-600">
-                <a href="index.html" class="hover:text-brand-teal transition">Home</a>
-                <a href="why-us.html" class="hover:text-brand-teal transition">Why Us</a>
-                <a href="contact.html" class="hover:text-brand-teal transition">Contact</a>
+                <a href="#solutions" class="hover:text-brand-teal transition">Solutions</a>
+                <a href="#why-us" class="hover:text-brand-teal transition">Why Us</a>
+                <a href="#faq" class="hover:text-brand-teal transition">FAQ</a>
+                <a href="#quote" class="hover:text-brand-teal transition">Contact Us</a>
                 <div class="flex items-center gap-2 text-brand-teal border-l pl-8 ml-2">
                     <i data-lucide="phone" class="w-4 h-4"></i>
                     <span>+1 (800) 123-4567</span>
@@ -64,7 +52,6 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
     <section class="relative pt-20 min-h-[750px] flex items-center">
         <div class="absolute inset-0 z-0">
             <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80" alt="Professional man" class="w-full h-full object-cover">
@@ -77,13 +64,12 @@
                 <p class="text-lg text-slate-300 mb-10 leading-relaxed">We provide comprehensive bonding solutions designed to help your business meet contractual requirements and grow with confidence.</p>
                 <div class="flex flex-wrap gap-4">
                     <a href="#quote" class="bg-brand-amber text-white px-8 py-4 rounded-xl font-bold hover:bg-amber-600 transition shadow-xl shadow-amber-500/20">Request a Quote</a>
-                    <a href="#solutions" class="border-2 border-white/30 text-white px-8 py-4 rounded-xl font-bold hover:bg-white/10 transition">Explore Solutions</a>
+                    <a href="#solutions" class="border-2 border-white/30 text-white px-8 py-4 rounded-xl font-bold hover:bg-white/10 transition">Learn More</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Stats -->
     <section class="py-16 bg-brand-navy">
         <div class="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8">
             <div class="text-center">
@@ -105,77 +91,63 @@
         </div>
     </section>
 
-    <!-- Solutions -->
     <section id="solutions" class="py-24 bg-brand-light">
         <div class="max-w-7xl mx-auto px-6">
             <div class="text-center mb-16">
-                <p class="text-brand-teal font-bold tracking-widest text-xs uppercase mb-4">Our Solutions</p>
-                <h2 class="font-serif text-4xl md:text-5xl text-brand-navy">Tailored Bonding Services</h2>
+                <p class="text-brand-teal font-bold tracking-widest text-xs uppercase mb-4">Our Services</p>
+                <h2 class="font-serif text-4xl md:text-5xl text-brand-navy">Insurance Solutions That Move Business Forward</h2>
             </div>
             <div class="grid md:grid-cols-3 gap-8">
-                <!-- Card 1 -->
                 <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition">
-                    <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=300&h=200&fit=crop" alt="Performance" class="w-full h-40 object-cover rounded-xl mb-6">
-                    <div class="w-14 h-14 bg-brand-teal/10 rounded-xl flex items-center justify-center mb-4">
-                        <i data-lucide="shield-check" class="w-7 h-7 text-brand-teal"></i>
-                    </div>
                     <h3 class="font-serif text-xl text-brand-navy mb-3">Performance Bonds</h3>
-                    <p class="text-slate-500 mb-6">Guarantee project completion with robust performance bonds that satisfy contract requirements.</p>
-                    <ul class="space-y-3 mb-8">
-                        <li class="flex items-center gap-3 text-sm text-slate-600"><i data-lucide="check" class="w-4 h-4 text-brand-teal"></i> Up to $10M per bond</li>
-                        <li class="flex items-center gap-3 text-sm text-slate-600"><i data-lucide="check" class="w-4 h-4 text-brand-teal"></i> Quick approval</li>
-                        <li class="flex items-center gap-3 text-sm text-slate-600"><i data-lucide="check" class="w-4 h-4 text-brand-teal"></i> All contract types</li>
-                    </ul>
-                    <a href="#quote" class="text-brand-teal font-semibold hover:underline">Get Quote →</a>
+                    <p class="text-slate-500 mb-6">Guarantee project completion according to contract terms and specifications.</p>
                 </div>
-                <!-- Card 2 -->
                 <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition">
-                    <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=300&h=200&fit=crop" alt="Payment" class="w-full h-40 object-cover rounded-xl mb-6">
-                    <div class="w-14 h-14 bg-brand-amber/10 rounded-xl flex items-center justify-center mb-4">
-                        <i data-lucide="hand-coins" class="w-7 h-7 text-brand-amber"></i>
-                    </div>
-                    <h3 class="font-serif text-xl text-brand-navy mb-3">Payment Bonds</h3>
-                    <p class="text-slate-500 mb-6">Ensure subcontractors and suppliers are paid on time and in full.</p>
-                    <ul class="space-y-3 mb-8">
-                        <li class="flex items-center gap-3 text-sm text-slate-600"><i data-lucide="check" class="w-4 h-4 text-brand-amber"></i> 100% payment guarantee</li>
-                        <li class="flex items-center gap-3 text-sm text-slate-600"><i data-lucide="check" class="w-4 h-4 text-brand-amber"></i> Lien release support</li>
-                        <li class="flex items-center gap-3 text-sm text-slate-600"><i data-lucide="check" class="w-4 h-4 text-brand-amber"></i> Multi-party coverage</li>
-                    </ul>
-                    <a href="#quote" class="text-brand-amber font-semibold hover:underline">Get Quote →</a>
+                    <h3 class="font-serif text-xl text-brand-navy mb-3">Surety Bonds</h3>
+                    <p class="text-slate-500 mb-6">Three-party agreements that provide financial security and business trust.</p>
                 </div>
-                <!-- Card 3 -->
                 <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition">
-                    <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=300&h=200&fit=crop" alt="Bid" class="w-full h-40 object-cover rounded-xl mb-6">
-                    <div class="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center mb-4">
-                        <i data-lucide="file-signature" class="w-7 h-7 text-blue-600"></i>
-                    </div>
                     <h3 class="font-serif text-xl text-brand-navy mb-3">Bid Bonds</h3>
-                    <p class="text-slate-500 mb-6">Stand out in competitive bids with reliable bid bonds from trusted providers.</p>
-                    <ul class="space-y-3 mb-8">
-                        <li class="flex items-center gap-3 text-sm text-slate-600"><i data-lucide="check" class="w-4 h-4 text-blue-600"></i> 5-10% bid amounts</li>
-                        <li class="flex items-center gap-3 text-sm text-slate-600"><i data-lucide="check" class="w-4 h-4 text-blue-600"></i> Same-day issuance</li>
-                        <li class="flex items-center gap-3 text-sm text-slate-600"><i data-lucide="check" class="w-4 h-4 text-blue-600"></i> All project sizes</li>
-                    </ul>
-                    <a href="#quote" class="text-blue-600 font-semibold hover:underline">Get Quote →</a>
+                    <p class="text-slate-500 mb-6">Ensures that successful bidders will enter into contract and provide required bonds.</p>
+                </div>
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition">
+                    <h3 class="font-serif text-xl text-brand-navy mb-3">Contract Bonds</h3>
+                    <p class="text-slate-500 mb-6">Bonding for construction and commercial service contracts tailored for your growth.</p>
+                </div>
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition">
+                    <h3 class="font-serif text-xl text-brand-navy mb-3">Premium Financing</h3>
+                    <p class="text-slate-500 mb-6">Flexible payment options to help manage your business cash flow effectively.</p>
+                </div>
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition">
+                    <h3 class="font-serif text-xl text-brand-navy mb-3">Liability Insurance</h3>
+                    <p class="text-slate-500 mb-6">Protect your business from general liability claims and property damage.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Why Us -->
     <section id="why-us" class="py-24 bg-white">
         <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
             <div>
-                <p class="text-brand-teal font-bold tracking-widest text-xs uppercase mb-4">Why Choose Us</p>
-                <h2 class="font-serif text-4xl text-brand-navy mb-6">Your Trusted Partner in Bonding Excellence</h2>
+                <p class="text-brand-teal font-bold tracking-widest text-xs uppercase mb-4">Premium Advantage</p>
+                <h2 class="font-serif text-4xl text-brand-navy mb-6">Bonds That Don't Need to Be Complicated</h2>
                 <div class="space-y-6">
                     <div class="flex gap-4">
                         <div class="w-12 h-12 bg-brand-teal/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                            <i data-lucide="clock" class="w-6 h-6 text-brand-teal"></i>
+                            <i data-lucide="eye" class="w-6 h-6 text-brand-teal"></i>
                         </div>
                         <div>
-                            <h4 class="font-semibold text-brand-navy mb-1">Fast Turnaround</h4>
-                            <p class="text-slate-500 text-sm">Get approved within 24 hours. Most bonds issued same-day for qualified applicants.</p>
+                            <h4 class="font-semibold text-brand-navy mb-1">Full Transparency</h4>
+                            <p class="text-slate-500 text-sm">Clear pricing and terms with no hidden fees.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <div class="w-12 h-12 bg-brand-teal/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <i data-lucide="zap" class="w-6 h-6 text-brand-teal"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-brand-navy mb-1">Fast Process</h4>
+                            <p class="text-slate-500 text-sm">Quick turnaround for bond applications.</p>
                         </div>
                     </div>
                     <div class="flex gap-4">
@@ -183,32 +155,27 @@
                             <i data-lucide="users" class="w-6 h-6 text-brand-teal"></i>
                         </div>
                         <div>
-                            <h4 class="font-semibold text-brand-navy mb-1">Expert Team</h4>
-                            <p class="text-slate-500 text-sm">Decades of combined experience in surety bonds and contract law.</p>
+                            <h4 class="font-semibold text-brand-navy mb-1">Expert Advisors</h4>
+                            <p class="text-slate-500 text-sm">Dedicated support from industry specialists.</p>
                         </div>
                     </div>
                     <div class="flex gap-4">
                         <div class="w-12 h-12 bg-brand-teal/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                            <i data-lucide="dollar-sign" class="w-6 h-6 text-brand-teal"></i>
+                            <i data-lucide="star" class="w-6 h-6 text-brand-teal"></i>
                         </div>
                         <div>
-                            <h4 class="font-semibold text-brand-navy mb-1">Competitive Rates</h4>
-                            <p class="text-slate-500 text-sm">We work with 50+ carriers to get you the best rates in the industry.</p>
+                            <h4 class="font-semibold text-brand-navy mb-1">Trust Reviews</h4>
+                            <p class="text-slate-500 text-sm">Highest rated service in the industry.</p>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="relative">
                 <img src="https://images.unsplash.com/photo-1556761175-4b46a572c786?auto=format&fit=crop&q=80" alt="Meeting" class="rounded-2xl shadow-2xl">
-                <div class="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-xl">
-                    <p class="font-serif text-3xl text-brand-teal">50+</p>
-                    <p class="text-slate-500 text-sm">Carrier Partners</p>
-                </div>
             </div>
         </div>
     </section>
 
-    <!-- FAQ -->
     <section id="faq" class="py-24 bg-brand-light">
         <div class="max-w-3xl mx-auto px-6">
             <div class="text-center mb-16">
@@ -218,43 +185,39 @@
             <div class="space-y-4">
                 <div class="faq-item bg-white rounded-xl overflow-hidden">
                     <button class="w-full px-6 py-5 flex items-center justify-between text-left">
-                        <span class="font-semibold text-brand-navy">What is a surety bond?</span>
+                        <span class="font-semibold text-brand-navy">What is a Performance Bond?</span>
                         <i data-lucide="chevron-down" class="chevron w-5 h-5 text-brand-teal transition"></i>
                     </button>
-                    <div class="faq-content px-6 pb-5 text-slate-500 text-sm">A surety bond is a three-party agreement where a surety (us) guarantees the principal's (your) performance to a third party (project owner). If you fail to perform, we cover the losses.</div>
+                    <div class="faq-content px-6 pb-5 text-slate-500 text-sm">A performance bond is a surety bond issued by an insurance company or a bank to guarantee satisfactory completion of a project by a contractor.</div>
                 </div>
                 <div class="faq-item bg-white rounded-xl overflow-hidden">
                     <button class="w-full px-6 py-5 flex items-center justify-between text-left">
-                        <span class="font-semibold text-brand-navy">How much does a bond cost?</span>
+                        <span class="font-semibold text-brand-navy">How long does it take to get a bond?</span>
                         <i data-lucide="chevron-down" class="chevron w-5 h-5 text-brand-teal transition"></i>
                     </button>
-                    <div class="faq-content px-6 pb-5 text-slate-500 text-sm">Rates vary based on credit, bond amount, and project type. Typically 1-3% of the bond amount for small business with good credit. Get a quote for exact pricing.</div>
+                    <div class="faq-content px-6 pb-5 text-slate-500 text-sm">Most applications are processed within 24 to 48 hours depending on the complexity and documentation provided.</div>
                 </div>
                 <div class="faq-item bg-white rounded-xl overflow-hidden">
                     <button class="w-full px-6 py-5 flex items-center justify-between text-left">
-                        <span class="font-semibold text-brand-navy">How long does approval take?</span>
+                        <span class="font-semibold text-brand-navy">What information is required?</span>
                         <i data-lucide="chevron-down" class="chevron w-5 h-5 text-brand-teal transition"></i>
                     </button>
-                    <div class="faq-content px-6 pb-5 text-slate-500 text-sm">Most applications are approved within 24 hours. Qualified applicants with clean credit can often get same-day approval.</div>
-                </div>
-                <div class="faq-item bg-white rounded-xl overflow-hidden">
-                    <button class="w-full px-6 py-5 flex items-center justify-between text-left">
-                        <span class="font-semibold text-brand-navy">Do you work with startups?</span>
-                        <i data-lucide="chevron-down" class="chevron w-5 h-5 text-brand-teal transition"></i>
-                    </button>
-                    <div class="faq-content px-6 pb-5 text-slate-500 text-sm">Yes! We have programs designed for startups and new businesses. We also offer credit-building options for those without established credit history.</div>
+                    <div class="faq-content px-6 pb-5 text-slate-500 text-sm">Usually, we need your company financial statements, personal indemnity, and specific project details to start the underwriting process.</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CTA -->
     <section id="quote" class="py-24 bg-brand-navy">
         <div class="max-w-4xl mx-auto px-6 text-center">
-            <h2 class="font-serif text-4xl md:text-5xl text-white mb-6">Ready to Get Started?</h2>
-            <p class="text-slate-300 mb-10 text-lg">Get a custom quote within 24 hours. No obligation, no hard credit check for initial quote.</p>
+            <h2 class="font-serif text-4xl md:text-5xl text-white mb-6">Ready to Start?</h2>
+            <p class="text-slate-300 mb-10 text-lg">Request a Quote</p>
             <form class="bg-white rounded-2xl p-8 text-left">
                 <div class="grid md:grid-cols-2 gap-6 mb-6">
+                    <div>
+                        <label class="block text-sm font-semibold text-brand-navy mb-2">Company Name</label>
+                        <input type="text" placeholder="Your Company Name" class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:border-brand-teal focus:ring-2 focus:ring-brand-teal/20 outline-none transition">
+                    </div>
                     <div>
                         <label class="block text-sm font-semibold text-brand-navy mb-2">Full Name</label>
                         <input type="text" placeholder="John Smith" class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:border-brand-teal focus:ring-2 focus:ring-brand-teal/20 outline-none transition">
@@ -264,77 +227,67 @@
                         <input type="email" placeholder="john@company.com" class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:border-brand-teal focus:ring-2 focus:ring-brand-teal/20 outline-none transition">
                     </div>
                     <div>
-                        <label class="block text-sm font-semibold text-brand-navy mb-2">Company Name</label>
-                        <input type="text" placeholder="Your Company LLC" class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:border-brand-teal focus:ring-2 focus:ring-brand-teal/20 outline-none transition">
-                    </div>
-                    <div>
                         <label class="block text-sm font-semibold text-brand-navy mb-2">Phone Number</label>
                         <input type="tel" placeholder="+1 (555) 123-4567" class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:border-brand-teal focus:ring-2 focus:ring-brand-teal/20 outline-none transition">
                     </div>
                 </div>
                 <div class="mb-6">
-                    <label class="block text-sm font-semibold text-brand-navy mb-2">Bond Type Needed</label>
+                    <label class="block text-sm font-semibold text-brand-navy mb-2">Type of Bond</label>
                     <select class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:border-brand-teal focus:ring-2 focus:ring-brand-teal/20 outline-none transition">
                         <option>Performance Bond</option>
-                        <option>Payment Bond</option>
+                        <option>Surety Bond</option>
                         <option>Bid Bond</option>
-                        <option>Other</option>
+                        <option>Contract Bond</option>
                     </select>
                 </div>
                 <div class="mb-6">
-                    <label class="block text-sm font-semibold text-brand-navy mb-2">Bond Amount (USD)</label>
-                    <input type="text" placeholder="$500,000" class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:border-brand-teal focus:ring-2 focus:ring-brand-teal/20 outline-none transition">
+                    <label class="block text-sm font-semibold text-brand-navy mb-2">Additional Message</label>
+                    <textarea rows="3" placeholder="Tell us about your project..." class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:border-brand-teal focus:ring-2 focus:ring-brand-teal/20 outline-none transition resize-none"></textarea>
                 </div>
-                <button type="submit" class="w-full bg-brand-teal text-white py-4 rounded-xl font-bold hover:bg-emerald-600 transition">Get My Free Quote</button>
+                <button type="submit" class="w-full bg-brand-teal text-white py-4 rounded-xl font-bold hover:bg-emerald-600 transition">Send Request</button>
             </form>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="bg-brand-navy py-16 border-t border-white/10">
         <div class="max-w-7xl mx-auto px-6">
             <div class="grid md:grid-cols-4 gap-12">
                 <div>
-<a href="index.html" class="text-brand-teal font-bold text-xl tracking-tight">Freedman Broker Insurance</a>
-                    <p class="text-slate-400 text-sm mt-4">Your trusted partner for surety and performance bonds. Building businesses since 2010.</p>
+                    <span class="text-brand-teal font-bold text-xl tracking-tight">Freedman Broker Insurance</span>
+                    <p class="text-slate-400 text-sm mt-4">Providing high-performance bonding and insurance solutions to businesses nationwide since 2005.</p>
                 </div>
                 <div>
                     <h4 class="font-semibold text-white mb-4">Solutions</h4>
                     <ul class="space-y-3 text-slate-400 text-sm">
                         <li><a href="#" class="hover:text-brand-teal transition">Performance Bonds</a></li>
-                        <li><a href="#" class="hover:text-brand-teal transition">Payment Bonds</a></li>
+                        <li><a href="#" class="hover:text-brand-teal transition">Surety Bonds</a></li>
                         <li><a href="#" class="hover:text-brand-teal transition">Bid Bonds</a></li>
-                        <li><a href="#" class="hover:text-brand-teal transition">Maintenance Bonds</a></li>
                     </ul>
                 </div>
                 <div>
                     <h4 class="font-semibold text-white mb-4">Company</h4>
                     <ul class="space-y-3 text-slate-400 text-sm">
                         <li><a href="#" class="hover:text-brand-teal transition">About Us</a></li>
-                        <li><a href="#" class="hover:text-brand-teal transition">Our Team</a></li>
+                        <li><a href="#" class="hover:text-brand-teal transition">Contact Us</a></li>
                         <li><a href="#" class="hover:text-brand-teal transition">Careers</a></li>
-                        <li><a href="#" class="hover:text-brand-teal transition">Contact</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h4 class="font-semibold text-white mb-4">Contact</h4>
+                    <h4 class="font-semibold text-white mb-4">Legal</h4>
                     <ul class="space-y-3 text-slate-400 text-sm">
-                        <li class="flex items-center gap-2"><i data-lucide="phone" class="w-4 h-4"></i> +1 (800) 123-4567</li>
-                        <li class="flex items-center gap-2"><i data-lucide="mail" class="w-4 h-4"></i> info@premiumbusiness.com</li>
-                        <li class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4"></i> New York, NY</li>
+                        <li><a href="#" class="hover:text-brand-teal transition">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-brand-teal transition">Terms of Use</a></li>
                     </ul>
                 </div>
             </div>
             <div class="border-t border-white/10 mt-12 pt-8 text-center text-slate-400 text-sm">
-                <p>&copy; 2026 Freedman Broker Insurance Bonds. All rights reserved.</p>
+                <p>&copy; 2024 Freedman Broker Insurance. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
     <script>
         lucide.createIcons();
-        
-        // FAQ toggle
         document.querySelectorAll('.faq-item button').forEach(btn => {
             btn.addEventListener('click', () => {
                 btn.parentElement.classList.toggle('active');
