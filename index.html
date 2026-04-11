@@ -461,12 +461,12 @@
         }
     </script>
     
-    <!-- N8N Chat Widget -->
+    <!-- Chat Widget -->
     <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
     <script type="module">
         import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
         
-        createChat({
+        const chat = createChat({
             webhookUrl: 'https://n8n-pzynllvf.us-west-1.clawcloudrun.com/webhook/0567d8a4-48dd-494c-972a-afbff7130956/chat',
             webhookConfig: {
                 method: 'POST',
@@ -476,9 +476,8 @@
             },
             chatInputKey: 'text',
             chatSessionKey: 'sessionId',
-            metadata: {
-                userId: 'visitor_' + Date.now()
-            }
+            storageKey: 'mike-chat-history',
+            loadPreviousMessages: true
         });
     </script>
 </body>
