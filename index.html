@@ -720,7 +720,13 @@
                     let reply;
                     if (contentType && contentType.includes('application/json')) {
                         const data = await response.json();
-                        reply = data.response || data.message || data.text || data.output || JSON.stringify(data);
+                        if (Array.isArray(data) && data.length > 0) {
+                            reply = data[0].text || data[0].output || data[0].message || data[0].response || JSON.stringify(data[0]);
+                        } else if (typeof data === 'object') {
+                            reply = data.text || data.output || data.message || data.response || JSON.stringify(data);
+                        } else {
+                            reply = String(data);
+                        }
                     } else {
                         reply = await response.text();
                     }
