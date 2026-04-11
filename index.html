@@ -52,20 +52,6 @@
         .mobile-link:hover {
             color: #10b981;
         }
-        .testimonial-card:hover {
-            transform: translateY(-5px);
-            transition: transform 0.3s ease;
-        }
-        @keyframes scroll {
-            0% { transform: translateX(0); }
-            100% { transform: translateX(-50%); }
-        }
-        .animate-scroll {
-            animation: scroll 40s linear infinite;
-        }
-        .animate-scroll:hover {
-            animation-play-state: paused;
-        }
     </style>
 </head>
 <body class="font-sans text-slate-700">
@@ -243,254 +229,14 @@
         </div>
     </section>
 
-    <!-- Client Stories - Moving Carousel -->
-    <section class="py-24 bg-brand-light overflow-hidden">
+    <!-- Client Stories -->
+    <section class="py-24 bg-brand-light">
         <div class="max-w-7xl mx-auto px-6">
             <div class="text-center mb-16">
                 <p class="text-brand-amber font-bold tracking-widest text-xs uppercase mb-3">Testimonials</p>
                 <h2 class="font-serif text-4xl text-brand-navy">What Our Clients Say</h2>
             </div>
-        </div>
-        <div class="relative">
-            <div class="testimonial-track flex gap-8 animate-scroll" style="width: max-content;">
-                <!-- Card 1 -->
-                <div class="testimonial-card flex-shrink-0 w-[400px] bg-white p-8 rounded-2xl shadow-lg">
-                    <div class="flex gap-1 mb-4">
-                        <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
-                        <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
-                        <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
-                        <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
-                        <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
-                    </div>
-                    <p class="text-slate-600 mb-6 leading-relaxed">"Freeman Broker made getting our performance bond incredibly easy. Their team was professional, fast, and got us approved within days. Highly recommend!"</p>
-                    <div class="flex items-center gap-3">
-                        <div class="w-10 h-10 bg-brand-teal/10 rounded-full flex items-center justify-center">
-                            <span class="font-bold text-brand-teal">MR</span>
-                        </div>
-                        <div>
-                            <p class="font-bold text-brand-navy text-sm">Michael Roberts</p>
-                            <p class="text-slate-500 text-xs">CEO, Roberts Construction</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Card 2 -->
-                <div class="testimonial-card flex-shrink-0 w-[400px] bg-white p-8 rounded-2xl shadow-lg">
-                    <div class="flex gap-1 mb-4">
-                        <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
-                        <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
-                        <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
-                        <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
-                        <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
-                    </div>
-                    <p class="text-slate-600 mb-6 leading-relaxed">"Absolute game-changer! They handled all the paperwork and got us the bond we needed to win a massive government contract within days. Exceptional service."</p>
-                    <div class="flex items-center gap-3">
-                        <div class="w-10 h-10 bg-brand-teal/10 rounded-full flex items-center justify-center">
-                            <span class="font-bold text-brand-teal">JW</span>
-                        </div>
-                        <div>
-                            <p class="font-bold text-brand-navy text-sm">James Wilson</p>
-                            <p class="text-slate-500 text-xs">CEO, Wilson Dynamics</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Card 3 -->
-                <div class="testimonial-card flex-shrink-0 w-[400px] bg-white p-8 rounded-2xl shadow-lg">
-                    <div class="flex gap-1 mb-4">
-                        <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
-                        <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
-                        <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
-                        <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
-                        <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
-                    </div>
-                    <p class="text-slate-600 mb-6 leading-relaxed">"Best rates in the industry! I've worked with multiple bonding companies and Freeman Broker consistently delivers. Their 24/7 support is a lifesaver."</p>
-                    <div class="flex items-center gap-3">
-                        <div class="w-10 h-10 bg-brand-teal/10 rounded-full flex items-center justify-center">
-                            <span class="font-bold text-brand-teal">SP</span>
-                        </div>
-                        <div>
-                            <p class="font-bold text-brand-navy text-sm">Sarah Peterson</p>
-                            <p class="text-slate-500 text-xs">VP, Peterson Builders</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Card 4 -->
-                <div class="testimonial-card flex-shrink-0 w-[400px] bg-white p-8 rounded-2xl shadow-lg">
-                    <div class="flex gap-1 mb-4">
-                        <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
-                        <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
-                        <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
-                        <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
-                        <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
-                    </div>
-                    <p class="text-slate-600 mb-6 leading-relaxed">"They helped us secure a $2M performance bond when other companies said no. Their expertise in the construction industry is unmatched. True professionals!"</p>
-                    <div class="flex items-center gap-3">
-                        <div class="w-10 h-10 bg-brand-teal/10 rounded-full flex items-center justify-center">
-                            <span class="font-bold text-brand-teal">DM</span>
-                        </div>
-                        <div>
-                            <p class="font-bold text-brand-navy text-sm">David Martinez</p>
-                            <p class="text-slate-500 text-xs">Owner, Martinez Contracting</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Card 5 -->
-                <div class="testimonial-card flex-shrink-0 w-[400px] bg-white p-8 rounded-2xl shadow-lg">
-                    <div class="flex gap-1 mb-4">
-                        <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
-                        <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
-                        <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
-                        <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
-                        <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
-                    </div>
-                    <p class="text-slate-600 mb-6 leading-relaxed">"Streamlined process from start to finish. Got my bid bond approved in just 4 hours! The team really knows how to make bonding simple and stress-free."</p>
-                    <div class="flex items-center gap-3">
-                        <div class="w-10 h-10 bg-brand-teal/10 rounded-full flex items-center justify-center">
-                            <span class="font-bold text-brand-teal">LT</span>
-                        </div>
-                        <div>
-                            <p class="font-bold text-brand-navy text-sm">Lisa Thompson</p>
-                            <p class="text-slate-500 text-xs">Project Manager, Thompson LLC</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Card 6 -->
-                <div class="testimonial-card flex-shrink-0 w-[400px] bg-white p-8 rounded-2xl shadow-lg">
-                    <div class="flex gap-1 mb-4">
-                        <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
-                        <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
-                        <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
-                        <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
-                        <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
-                    </div>
-                    <p class="text-slate-600 mb-6 leading-relaxed">"98% approval rate? They lived up to it! Got my surety bond approved despite having less-than-perfect credit. Highly recommend for first-time applicants."</p>
-                    <div class="flex items-center gap-3">
-                        <div class="w-10 h-10 bg-brand-teal/10 rounded-full flex items-center justify-center">
-                            <span class="font-bold text-brand-teal">RK</span>
-                        </div>
-                        <div>
-                            <p class="font-bold text-brand-navy text-sm">Robert Kim</p>
-                            <p class="text-slate-500 text-xs">Founder, Kim Development</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Duplicate cards for seamless loop -->
-                <div class="testimonial-card flex-shrink-0 w-[400px] bg-white p-8 rounded-2xl shadow-lg">
-                    <div class="flex gap-1 mb-4">
-                        <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
-                        <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
-                        <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
-                        <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
-                        <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
-                    </div>
-                    <p class="text-slate-600 mb-6 leading-relaxed">"Freeman Broker made getting our performance bond incredibly easy. Their team was professional, fast, and got us approved within days. Highly recommend!"</p>
-                    <div class="flex items-center gap-3">
-                        <div class="w-10 h-10 bg-brand-teal/10 rounded-full flex items-center justify-center">
-                            <span class="font-bold text-brand-teal">MR</span>
-                        </div>
-                        <div>
-                            <p class="font-bold text-brand-navy text-sm">Michael Roberts</p>
-                            <p class="text-slate-500 text-xs">CEO, Roberts Construction</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-card flex-shrink-0 w-[400px] bg-white p-8 rounded-2xl shadow-lg">
-                    <div class="flex gap-1 mb-4">
-                        <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
-                        <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
-                        <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
-                        <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
-                        <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
-                    </div>
-                    <p class="text-slate-600 mb-6 leading-relaxed">"Absolute game-changer! They handled all the paperwork and got us the bond we needed to win a massive government contract within days. Exceptional service."</p>
-                    <div class="flex items-center gap-3">
-                        <div class="w-10 h-10 bg-brand-teal/10 rounded-full flex items-center justify-center">
-                            <span class="font-bold text-brand-teal">JW</span>
-                        </div>
-                        <div>
-                            <p class="font-bold text-brand-navy text-sm">James Wilson</p>
-                            <p class="text-slate-500 text-xs">CEO, Wilson Dynamics</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-card flex-shrink-0 w-[400px] bg-white p-8 rounded-2xl shadow-lg">
-                    <div class="flex gap-1 mb-4">
-                        <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
-                        <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
-                        <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
-                        <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
-                        <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
-                    </div>
-                    <p class="text-slate-600 mb-6 leading-relaxed">"Best rates in the industry! I've worked with multiple bonding companies and Freeman Broker consistently delivers. Their 24/7 support is a lifesaver."</p>
-                    <div class="flex items-center gap-3">
-                        <div class="w-10 h-10 bg-brand-teal/10 rounded-full flex items-center justify-center">
-                            <span class="font-bold text-brand-teal">SP</span>
-                        </div>
-                        <div>
-                            <p class="font-bold text-brand-navy text-sm">Sarah Peterson</p>
-                            <p class="text-slate-500 text-xs">VP, Peterson Builders</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-card flex-shrink-0 w-[400px] bg-white p-8 rounded-2xl shadow-lg">
-                    <div class="flex gap-1 mb-4">
-                        <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
-                        <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
-                        <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
-                        <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
-                        <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
-                    </div>
-                    <p class="text-slate-600 mb-6 leading-relaxed">"They helped us secure a $2M performance bond when other companies said no. Their expertise in the construction industry is unmatched. True professionals!"</p>
-                    <div class="flex items-center gap-3">
-                        <div class="w-10 h-10 bg-brand-teal/10 rounded-full flex items-center justify-center">
-                            <span class="font-bold text-brand-teal">DM</span>
-                        </div>
-                        <div>
-                            <p class="font-bold text-brand-navy text-sm">David Martinez</p>
-                            <p class="text-slate-500 text-xs">Owner, Martinez Contracting</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-card flex-shrink-0 w-[400px] bg-white p-8 rounded-2xl shadow-lg">
-                    <div class="flex gap-1 mb-4">
-                        <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
-                        <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
-                        <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
-                        <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
-                        <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
-                    </div>
-                    <p class="text-slate-600 mb-6 leading-relaxed">"Streamlined process from start to finish. Got my bid bond approved in just 4 hours! The team really knows how to make bonding simple and stress-free."</p>
-                    <div class="flex items-center gap-3">
-                        <div class="w-10 h-10 bg-brand-teal/10 rounded-full flex items-center justify-center">
-                            <span class="font-bold text-brand-teal">LT</span>
-                        </div>
-                        <div>
-                            <p class="font-bold text-brand-navy text-sm">Lisa Thompson</p>
-                            <p class="text-slate-500 text-xs">Project Manager, Thompson LLC</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-card flex-shrink-0 w-[400px] bg-white p-8 rounded-2xl shadow-lg">
-                    <div class="flex gap-1 mb-4">
-                        <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
-                        <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
-                        <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
-                        <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
-                        <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
-                    </div>
-                    <p class="text-slate-600 mb-6 leading-relaxed">"98% approval rate? They lived up to it! Got my surety bond approved despite having less-than-perfect credit. Highly recommend for first-time applicants."</p>
-                    <div class="flex items-center gap-3">
-                        <div class="w-10 h-10 bg-brand-teal/10 rounded-full flex items-center justify-center">
-                            <span class="font-bold text-brand-teal">RK</span>
-                        </div>
-                        <div>
-                            <p class="font-bold text-brand-navy text-sm">Robert Kim</p>
-                            <p class="text-slate-500 text-xs">Founder, Kim Development</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+            <div class="grid md:grid-cols-3 gap-8">
                 <div class="bg-white p-8 rounded-2xl shadow-lg">
                     <div class="flex gap-1 mb-4">
                         <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
@@ -509,6 +255,104 @@
                             <p class="text-slate-500 text-xs">CEO, Roberts Construction</p>
                         </div>
                     </div>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-lg">
+                    <div class="flex gap-1 mb-4">
+                        <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
+                    </div>
+                    <p class="text-slate-600 mb-6 leading-relaxed">"Absolute game-changer! They handled all the paperwork and got us the bond we needed to win a massive government contract within days. Exceptional service."</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-brand-teal/10 rounded-full flex items-center justify-center">
+                            <span class="font-bold text-brand-teal">JW</span>
+                        </div>
+                        <div>
+                            <p class="font-bold text-brand-navy text-sm">James Wilson</p>
+                            <p class="text-slate-500 text-xs">CEO, Wilson Dynamics</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-lg">
+                    <div class="flex gap-1 mb-4">
+                        <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
+                    </div>
+                    <p class="text-slate-600 mb-6 leading-relaxed">"Best rates in the industry! I've worked with multiple bonding companies and Freeman Broker consistently delivers. Their 24/7 support is a lifesaver."</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-brand-teal/10 rounded-full flex items-center justify-center">
+                            <span class="font-bold text-brand-teal">SP</span>
+                        </div>
+                        <div>
+                            <p class="font-bold text-brand-navy text-sm">Sarah Peterson</p>
+                            <p class="text-slate-500 text-xs">VP, Peterson Builders</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-lg">
+                    <div class="flex gap-1 mb-4">
+                        <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
+                    </div>
+                    <p class="text-slate-600 mb-6 leading-relaxed">"They helped us secure a $2M performance bond when other companies said no. Their expertise in the construction industry is unmatched. True professionals!"</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-brand-teal/10 rounded-full flex items-center justify-center">
+                            <span class="font-bold text-brand-teal">DM</span>
+                        </div>
+                        <div>
+                            <p class="font-bold text-brand-navy text-sm">David Martinez</p>
+                            <p class="text-slate-500 text-xs">Owner, Martinez Contracting</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-lg">
+                    <div class="flex gap-1 mb-4">
+                        <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
+                    </div>
+                    <p class="text-slate-600 mb-6 leading-relaxed">"Streamlined process from start to finish. Got my bid bond approved in just 4 hours! The team really knows how to make bonding simple and stress-free."</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-brand-teal/10 rounded-full flex items-center justify-center">
+                            <span class="font-bold text-brand-teal">LT</span>
+                        </div>
+                        <div>
+                            <p class="font-bold text-brand-navy text-sm">Lisa Thompson</p>
+                            <p class="text-slate-500 text-xs">Project Manager, Thompson LLC</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-lg">
+                    <div class="flex gap-1 mb-4">
+                        <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
+                    </div>
+                    <p class="text-slate-600 mb-6 leading-relaxed">"98% approval rate? They lived up to it! Got my surety bond approved despite having less-than-perfect credit. Highly recommend for first-time applicants."</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-brand-teal/10 rounded-full flex items-center justify-center">
+                            <span class="font-bold text-brand-teal">RK</span>
+                        </div>
+                        <div>
+                            <p class="font-bold text-brand-navy text-sm">Robert Kim</p>
+                            <p class="text-slate-500 text-xs">Founder, Kim Development</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- FAQ -->
