@@ -52,6 +52,30 @@
         .mobile-link:hover {
             color: #10b981;
         }
+        .testimonial-slider .card {
+            flex-shrink: 0;
+            width: calc(33.333% - 1rem);
+            margin-right: 1.5rem;
+        }
+        @media (max-width: 768px) {
+            .testimonial-slider .card {
+                width: calc(100% - 2rem);
+                margin-right: 2rem;
+            }
+        }
+        .slider-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: #cbd5e1;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        .slider-dot.active {
+            background: #10b981;
+            width: 30px;
+            border-radius: 5px;
+        }
     </style>
 </head>
 <body class="font-sans text-slate-700">
@@ -229,129 +253,27 @@
         </div>
     </section>
 
-    <!-- Client Stories -->
+    <!-- Client Stories - Dynamic Slider -->
     <section class="py-24 bg-brand-light">
         <div class="max-w-7xl mx-auto px-6">
             <div class="text-center mb-16">
                 <p class="text-brand-amber font-bold tracking-widest text-xs uppercase mb-3">Testimonials</p>
                 <h2 class="font-serif text-4xl text-brand-navy">What Our Clients Say</h2>
             </div>
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-white p-8 rounded-2xl shadow-lg">
-                    <div class="flex gap-1 mb-4">
-                        <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
-                        <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
-                        <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
-                        <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
-                        <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
-                    </div>
-                    <p class="text-slate-600 mb-6 leading-relaxed">"Freeman Broker made getting our performance bond incredibly easy. Their team was professional, fast, and got us approved within days. Highly recommend!"</p>
-                    <div class="flex items-center gap-3">
-                        <div class="w-10 h-10 bg-brand-teal/10 rounded-full flex items-center justify-center">
-                            <span class="font-bold text-brand-teal">MR</span>
-                        </div>
-                        <div>
-                            <p class="font-bold text-brand-navy text-sm">Michael Roberts</p>
-                            <p class="text-slate-500 text-xs">CEO, Roberts Construction</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="bg-white p-8 rounded-2xl shadow-lg">
-                    <div class="flex gap-1 mb-4">
-                        <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
-                        <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
-                        <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
-                        <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
-                        <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
-                    </div>
-                    <p class="text-slate-600 mb-6 leading-relaxed">"Absolute game-changer! They handled all the paperwork and got us the bond we needed to win a massive government contract within days. Exceptional service."</p>
-                    <div class="flex items-center gap-3">
-                        <div class="w-10 h-10 bg-brand-teal/10 rounded-full flex items-center justify-center">
-                            <span class="font-bold text-brand-teal">JW</span>
-                        </div>
-                        <div>
-                            <p class="font-bold text-brand-navy text-sm">James Wilson</p>
-                            <p class="text-slate-500 text-xs">CEO, Wilson Dynamics</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="bg-white p-8 rounded-2xl shadow-lg">
-                    <div class="flex gap-1 mb-4">
-                        <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
-                        <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
-                        <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
-                        <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
-                        <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
-                    </div>
-                    <p class="text-slate-600 mb-6 leading-relaxed">"Best rates in the industry! I've worked with multiple bonding companies and Freeman Broker consistently delivers. Their 24/7 support is a lifesaver."</p>
-                    <div class="flex items-center gap-3">
-                        <div class="w-10 h-10 bg-brand-teal/10 rounded-full flex items-center justify-center">
-                            <span class="font-bold text-brand-teal">SP</span>
-                        </div>
-                        <div>
-                            <p class="font-bold text-brand-navy text-sm">Sarah Peterson</p>
-                            <p class="text-slate-500 text-xs">VP, Peterson Builders</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="bg-white p-8 rounded-2xl shadow-lg">
-                    <div class="flex gap-1 mb-4">
-                        <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
-                        <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
-                        <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
-                        <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
-                        <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
-                    </div>
-                    <p class="text-slate-600 mb-6 leading-relaxed">"They helped us secure a $2M performance bond when other companies said no. Their expertise in the construction industry is unmatched. True professionals!"</p>
-                    <div class="flex items-center gap-3">
-                        <div class="w-10 h-10 bg-brand-teal/10 rounded-full flex items-center justify-center">
-                            <span class="font-bold text-brand-teal">DM</span>
-                        </div>
-                        <div>
-                            <p class="font-bold text-brand-navy text-sm">David Martinez</p>
-                            <p class="text-slate-500 text-xs">Owner, Martinez Contracting</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="bg-white p-8 rounded-2xl shadow-lg">
-                    <div class="flex gap-1 mb-4">
-                        <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
-                        <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
-                        <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
-                        <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
-                        <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
-                    </div>
-                    <p class="text-slate-600 mb-6 leading-relaxed">"Streamlined process from start to finish. Got my bid bond approved in just 4 hours! The team really knows how to make bonding simple and stress-free."</p>
-                    <div class="flex items-center gap-3">
-                        <div class="w-10 h-10 bg-brand-teal/10 rounded-full flex items-center justify-center">
-                            <span class="font-bold text-brand-teal">LT</span>
-                        </div>
-                        <div>
-                            <p class="font-bold text-brand-navy text-sm">Lisa Thompson</p>
-                            <p class="text-slate-500 text-xs">Project Manager, Thompson LLC</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="bg-white p-8 rounded-2xl shadow-lg">
-                    <div class="flex gap-1 mb-4">
-                        <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
-                        <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
-                        <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
-                        <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
-                        <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
-                    </div>
-                    <p class="text-slate-600 mb-6 leading-relaxed">"98% approval rate? They lived up to it! Got my surety bond approved despite having less-than-perfect credit. Highly recommend for first-time applicants."</p>
-                    <div class="flex items-center gap-3">
-                        <div class="w-10 h-10 bg-brand-teal/10 rounded-full flex items-center justify-center">
-                            <span class="font-bold text-brand-teal">RK</span>
-                        </div>
-                        <div>
-                            <p class="font-bold text-brand-navy text-sm">Robert Kim</p>
-                            <p class="text-slate-500 text-xs">Founder, Kim Development</p>
-                        </div>
-                    </div>
-                </div>
+        </div>
+        <div class="relative overflow-hidden">
+            <div class="testimonial-slider flex transition-transform duration-500 ease-in-out" id="testimonialSlider">
+                <!-- Slides will be populated by JavaScript -->
             </div>
+            <!-- Navigation Dots -->
+            <div class="flex justify-center gap-2 mt-8" id="sliderDots"></div>
+            <!-- Navigation Arrows -->
+            <button onclick="prevSlide()" class="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-white rounded-full shadow-lg flex items-center justify-center hover:bg-brand-teal hover:text-white transition z-10">
+                <i data-lucide="chevron-left" class="w-6 h-6"></i>
+            </button>
+            <button onclick="nextSlide()" class="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-white rounded-full shadow-lg flex items-center justify-center hover:bg-brand-teal hover:text-white transition z-10">
+                <i data-lucide="chevron-right" class="w-6 h-6"></i>
+            </button>
         </div>
     </section>
 
@@ -392,6 +314,56 @@
                     </button>
                     <div class="faq-content px-5">
                         <p class="text-slate-600 text-sm pb-5">Usually, we need your company financial statements, personal indemnity, and specific project details to start the underwriting process.</p>
+                    </div>
+                </div>
+                <!-- FAQ 4 -->
+                <div class="faq-item border border-slate-100 rounded-xl bg-brand-light/50 overflow-hidden">
+                    <button class="w-full flex items-center justify-between p-5 text-left font-semibold text-brand-navy" onclick="toggleFaq(this)">
+                        What types of bonds do you offer?
+                        <i data-lucide="chevron-down" class="chevron w-5 h-5 text-slate-400 transition-transform"></i>
+                    </button>
+                    <div class="faq-content px-5">
+                        <p class="text-slate-600 text-sm pb-5">We offer Performance Bonds, Surety Bonds, Bid Bonds, Contract Bonds, Payment Bonds, Maintenance Bonds, and Liability Insurance to meet all your bonding needs.</p>
+                    </div>
+                </div>
+                <!-- FAQ 5 -->
+                <div class="faq-item border border-slate-100 rounded-xl bg-brand-light/50 overflow-hidden">
+                    <button class="w-full flex items-center justify-between p-5 text-left font-semibold text-brand-navy" onclick="toggleFaq(this)">
+                        Do you offer financing options?
+                        <i data-lucide="chevron-down" class="chevron w-5 h-5 text-slate-400 transition-transform"></i>
+                    </button>
+                    <div class="faq-content px-5">
+                        <p class="text-slate-600 text-sm pb-5">Yes! We offer premium financing with flexible payment options to help manage your business cash flow effectively. Contact us to learn more.</p>
+                    </div>
+                </div>
+                <!-- FAQ 6 -->
+                <div class="faq-item border border-slate-100 rounded-xl bg-brand-light/50 overflow-hidden">
+                    <button class="w-full flex items-center justify-between p-5 text-left font-semibold text-brand-navy" onclick="toggleFaq(this)">
+                        What is your approval rate?
+                        <i data-lucide="chevron-down" class="chevron w-5 h-5 text-slate-400 transition-transform"></i>
+                    </button>
+                    <div class="faq-content px-5">
+                        <p class="text-slate-600 text-sm pb-5">We have a 98% approval rate. Our team works with applicants to find the right solution, even for complex cases or less-than-perfect credit.</p>
+                    </div>
+                </div>
+                <!-- FAQ 7 -->
+                <div class="faq-item border border-slate-100 rounded-xl bg-brand-light/50 overflow-hidden">
+                    <button class="w-full flex items-center justify-between p-5 text-left font-semibold text-brand-navy" onclick="toggleFaq(this)">
+                        How much does a performance bond cost?
+                        <i data-lucide="chevron-down" class="chevron w-5 h-5 text-slate-400 transition-transform"></i>
+                    </button>
+                    <div class="faq-content px-5">
+                        <p class="text-slate-600 text-sm pb-5">Bond costs vary based on bond amount, project type, and your credit history. We offer competitive rates - contact us for a personalized quote.</p>
+                    </div>
+                </div>
+                <!-- FAQ 8 -->
+                <div class="faq-item border border-slate-100 rounded-xl bg-brand-light/50 overflow-hidden">
+                    <button class="w-full flex items-center justify-between p-5 text-left font-semibold text-brand-navy" onclick="toggleFaq(this)">
+                        Can you help with government contracts?
+                        <i data-lucide="chevron-down" class="chevron w-5 h-5 text-slate-400 transition-transform"></i>
+                    </button>
+                    <div class="faq-content px-5">
+                        <p class="text-slate-600 text-sm pb-5">Absolutely! We specialize in government and public sector bonds. Our team understands the requirements and can help you navigate the process.</p>
                     </div>
                 </div>
             </div>
@@ -521,6 +493,133 @@
                 });
             });
         }
+
+        // Testimonial Slider
+        const testimonials = [
+            {
+                text: "Freeman Broker made getting our performance bond incredibly easy. Their team was professional, fast, and got us approved within days. Highly recommend!",
+                name: "Michael Roberts",
+                title: "CEO, Roberts Construction",
+                initials: "MR"
+            },
+            {
+                text: "Absolute game-changer! They handled all the paperwork and got us the bond we needed to win a massive government contract within days. Exceptional service.",
+                name: "James Wilson",
+                title: "CEO, Wilson Dynamics",
+                initials: "JW"
+            },
+            {
+                text: "Best rates in the industry! I've worked with multiple bonding companies and Freeman Broker consistently delivers. Their 24/7 support is a lifesaver.",
+                name: "Sarah Peterson",
+                title: "VP, Peterson Builders",
+                initials: "SP"
+            },
+            {
+                text: "They helped us secure a $2M performance bond when other companies said no. Their expertise in the construction industry is unmatched. True professionals!",
+                name: "David Martinez",
+                title: "Owner, Martinez Contracting",
+                initials: "DM"
+            },
+            {
+                text: "Streamlined process from start to finish. Got my bid bond approved in just 4 hours! The team really knows how to make bonding simple and stress-free.",
+                name: "Lisa Thompson",
+                title: "Project Manager, Thompson LLC",
+                initials: "LT"
+            },
+            {
+                text: "98% approval rate? They lived up to it! Got my surety bond approved despite having less-than-perfect credit. Highly recommend for first-time applicants.",
+                name: "Robert Kim",
+                title: "Founder, Kim Development",
+                initials: "RK"
+            }
+        ];
+
+        let currentSlide = 0;
+        const slider = document.getElementById('testimonialSlider');
+        const dotsContainer = document.getElementById('sliderDots');
+
+        function renderSlides() {
+            if (!slider) return;
+            const cardsPerView = window.innerWidth >= 1024 ? 3 : window.innerWidth >= 768 ? 2 : 1;
+            let html = '';
+            testimonials.forEach((t, i) => {
+                html += `
+                <div class="card bg-white p-8 rounded-2xl shadow-lg">
+                    <div class="flex gap-1 mb-4">
+                        <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
+                    </div>
+                    <p class="text-slate-600 mb-6 leading-relaxed">"${t.text}"</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-brand-teal/10 rounded-full flex items-center justify-center">
+                            <span class="font-bold text-brand-teal">${t.initials}</span>
+                        </div>
+                        <div>
+                            <p class="font-bold text-brand-navy text-sm">${t.name}</p>
+                            <p class="text-slate-500 text-xs">${t.title}</p>
+                        </div>
+                    </div>
+                </div>`;
+            });
+            slider.innerHTML = html;
+            
+            // Render dots
+            const totalDots = Math.ceil(testimonials.length / cardsPerView);
+            let dotsHtml = '';
+            for (let i = 0; i < totalDots; i++) {
+                dotsHtml += `<div class="slider-dot ${i === 0 ? 'active' : ''}" onclick="goToSlide(${i})"></div>`;
+            }
+            dotsContainer.innerHTML = dotsHtml;
+            
+            lucide.createIcons();
+            updateSlider();
+        }
+
+        function updateSlider() {
+            if (!slider) return;
+            const cardsPerView = window.innerWidth >= 1024 ? 3 : window.innerWidth >= 768 ? 2 : 1;
+            const cardWidth = slider.querySelector('.card')?.offsetWidth || 400;
+            const gap = 24;
+            const offset = currentSlide * (cardWidth + gap);
+            slider.style.transform = `translateX(-${offset}px)`;
+            
+            // Update dots
+            const dots = dotsContainer.querySelectorAll('.slider-dot');
+            dots.forEach((dot, i) => {
+                dot.classList.toggle('active', i === currentSlide);
+            });
+        }
+
+        function nextSlide() {
+            const cardsPerView = window.innerWidth >= 1024 ? 3 : window.innerWidth >= 768 ? 2 : 1;
+            const maxSlide = Math.ceil(testimonials.length / cardsPerView) - 1;
+            currentSlide = currentSlide >= maxSlide ? 0 : currentSlide + 1;
+            updateSlider();
+        }
+
+        function prevSlide() {
+            const cardsPerView = window.innerWidth >= 1024 ? 3 : window.innerWidth >= 768 ? 2 : 1;
+            const maxSlide = Math.ceil(testimonials.length / cardsPerView) - 1;
+            currentSlide = currentSlide <= 0 ? maxSlide : currentSlide - 1;
+            updateSlider();
+        }
+
+        function goToSlide(index) {
+            currentSlide = index;
+            updateSlider();
+        }
+
+        // Auto-advance every 5 seconds
+        setInterval(nextSlide, 5000);
+
+        // Initialize
+        renderSlides();
+        window.addEventListener('resize', () => {
+            renderSlides();
+        });
     </script>
     
     <!-- Custom Chat Widget with History -->
