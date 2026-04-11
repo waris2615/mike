@@ -277,7 +277,7 @@
         <div class="n8n-chat-input-area"><input type="text" class="n8n-chat-input" id="chatInput" placeholder="Type your message..." onkeypress="if(event.key==='Enter')sendMessage()"><button class="n8n-chat-send" onclick="sendMessage()"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/></svg></button></div>
     </div>
     <script>
-        const WEBHOOK_URL = 'https://n8n-pzynllvf.us-west-1.clawcloudrun.com/webhook-test/ced5d0d8-1d54-4723-b33e-5003fb6d68a9';
+        const WEBHOOK_URL = 'https://n8n-pzynllvf.us-west-1.clawcloudrun.com/webhook/ced5d0d8-1d54-4723-b33e-5003fb6d68a9';
         const STORAGE_KEY = 'mike-chat-history';
         let sessionId = localStorage.getItem('mike-chat-session') || 'sess_' + Date.now();
         localStorage.setItem('mike-chat-session', sessionId);
