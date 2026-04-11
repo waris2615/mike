@@ -716,8 +716,15 @@
                 });
                 hideTyping();
                 if (response.ok) {
-                    const data = await response.json();
-                    addMessage(data.response || data.message || data.text || "Thanks! An agent will respond shortly.");
+                    const contentType = response.headers.get('content-type');
+                    let reply;
+                    if (contentType && contentType.includes('application/json')) {
+                        const data = await response.json();
+                        reply = data.response || data.message || data.text || data.output || JSON.stringify(data);
+                    } else {
+                        reply = await response.text();
+                    }
+                    addMessage(reply || "Thanks! We'll get back to you soon.");
                 } else {
                     addMessage("Sorry, I'm having trouble connecting. Please try again.");
                 }
